@@ -70,3 +70,6 @@ Swagger UI
 
 Notes: 
 express-async-errors patches Express to automatically catch rejected promises (unhandled errors) in async functions and forward them to your error handling middleware.
+In payload we generally provide id and user name and send the token back, in the subsequent requests we send the token and get the user name.
+This user name is used to fetch the data from the database associated with the user.
+With this we achieve authentication and authorization.
